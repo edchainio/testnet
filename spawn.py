@@ -134,7 +134,7 @@ def harden(hostname, ssh_port, email, username, password, res):
         os.system('rm .htpasswd-credentials')
         os.system('rm .chpasswd-credentials')
 
-        os.system('scp root@{0}:/etc/pki/tls/certs/logstash-forwarder.crt certificates'.format(ip_address))
+        os.system('scp root@{0}:/etc/pki/tls/certs/logstash-forwarder.crt .'.format(ip_address)) # TODO Find a place to store the certificate
 
         os.system('ssh -o "StrictHostKeyChecking no" root@{2} \'bash -s\' < procedures/docker/configuration-{1}-{0}.sh'.format(count, hostname, ip_address))
         os.system('ssh -o "StrictHostKeyChecking no" root@{2} \'bash -s\' < procedures/elastic_search/configuration-{1}-{0}.sh'.format(count, hostname, ip_address))
