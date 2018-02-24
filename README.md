@@ -2,35 +2,7 @@
 
 # Getting started
 
-- Spin-up a test network
-
-# Goal
-
-- Integrate Stellar into our prototype
-
-### Overnight
-
-- fork Stellar
-- try to figure out what we need to change "so that it doesn't go to the main net on Stellar"
-- "focus on forking Stellar"
-- Harish will focus on creating a token on Stellar
-
-### Tomorrow
-
-
-# Luxury goals
-
-- ...something like meta-mask
-
 # Going further
-
-- Demo. a platform that'd be suitable for an ICO
-
----
-
-# Milestones
-
-- Harish spun-up an ephemeral node
 
 ---
 
